@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizDAW</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>QuizDAW</h1>
+    <p id="saludo" class="muted"></p>
+    <div class="barra">
+      <button type="button" id="btnTema" class="secundario">Cambiar tema</button>
+      <button type="button" id="btnResultados" class="secundario">Ver resultados</button>
+      <button type="button" id="btnBorrar" class="peligro">Borrar datos</button>
+    </div>
+  </header>
+
+  <section id="inicio" class="card">
+    <h2>¿Listo?</h2>
+    <p>5 preguntas sobre desarrollo web. ¡Suerte!</p>
+    <button type="button" id="btnContrarreloj" class="secundario">Activar contrarreloj (30 s)</button>
+    <p id="estadoModo" class="muted">Modo normal activado.</p>
+    <button type="button" id="btnEmpezar">Empezar</button>
+  </section>
+
+  <section id="juego" class="card" hidden>
+    <h2 id="textoPregunta"></h2>
+    <p id="temporizador" class="muted" hidden></p>
+    <div id="opciones"></div>
+    <p id="feedback" class="feedback"></p>
+    <button type="button" id="btnSiguiente" hidden>Siguiente</button>
+    <p id="marcador" class="muted"></p>
+  </section>
+
+  <section id="final" class="card" hidden>
+    <h2>Fin de la partida</h2>
+    <p id="textoFinal"></p>
+    <button type="button" id="btnOtra">Jugar otra vez</button>
+  </section>
+
+  <section class="card">
+    <h2>Últimas partidas</h2>
+    <ul id="listaPartidas"></ul>
+    <p id="media" class="muted"></p>
+  </section>
+
+  <footer>
+    <p id="info" class="muted"></p>
+  </footer>
+
+  <script src="preguntas.js"></script>
+  <script src="cookies.js"></script>
+  <script src="partida.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

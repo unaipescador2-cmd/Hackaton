@@ -1,0 +1,27 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:#f1f4fa;color:#1a1a2e;max-width:720px;margin:24px auto;padding:0 16px;line-height:1.5;}
+body.oscuro{background:#0f1420;color:#e8ecf4;}
+[hidden]{display:none !important;}
+h1{color:#2a5fd0;margin-bottom:4px;}
+body.oscuro h1{color:#4f8cff;}
+h2{font-size:1.1rem;margin-bottom:10px;}
+.muted{color:#6b7280;font-size:.9rem;}
+body.oscuro .muted{color:#93a0b8;}
+.barra{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.card #estadoModo{margin:8px 0;}
+.card{background:#fff;border:1px solid #d9dee8;border-radius:14px;padding:18px;margin-top:16px;}
+body.oscuro .card{background:#171e2e;border-color:#263149;}
+button{padding:9px 16px;background:#2a5fd0;color:#fff;border:none;border-radius:10px;font-weight:600;cursor:pointer;}
+button:hover{filter:brightness(1.1);}
+.secundario{background:#5a6785;}
+.peligro{background:#d64545;}
+#opciones{display:grid;gap:8px;margin:12px 0;}
+.opcion{text-align:left;background:#e8eefc;color:#1a1a2e;}
+body.oscuro .opcion{background:#1f2a44;color:#e8ecf4;}
+.opcion.ok{background:#35c28b;color:#05231a;}
+.opcion.mal{background:#ff6b6b;color:#fff;}
+.feedback{margin:8px 0;font-weight:600;min-height:1.3em;}
+ul{margin:8px 0 8px 20px;}
+table{width:100%;border-collapse:collapse;margin-top:12px;}
+th,td{border-bottom:1px solid #d9dee8;padding:8px;text-align:left;font-size:.92rem;}
+footer{margin-top:20px;}
